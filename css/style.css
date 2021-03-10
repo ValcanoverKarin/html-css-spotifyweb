@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*COMMON*/
 #app-wrapper {
     width: 100%;
     height: 100vh;
@@ -13,6 +14,14 @@
     /*TEST*/
     background-color: aquamarine;
 }
+
+a{
+    text-decoration: none;
+}
+
+.menu-link, .menu-palylist {
+    list-style-type: none;
+} 
 
 /*MAIN*/
 main {
@@ -27,12 +36,17 @@ nav {
     width: 209px;
     overflow: hidden;
     padding: 18px;
+    color: white;
      /*TEST*/
      background-color: #000000;
 }
 
 nav .logo img{
     height: 35px;
+}
+
+nav a {
+    color: white;
 }
 
 .main-content {
