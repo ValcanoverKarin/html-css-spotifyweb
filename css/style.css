@@ -8,6 +8,7 @@
 #app-wrapper {
     width: 100%;
     height: 100vh;
+    font-family: 'Montserrat';
 
     /*TEST*/
     background-color: aquamarine;
@@ -15,19 +16,30 @@
 
 /*MAIN*/
 main {
-    height: calc( 100% - 80px);
+    height: calc( 100% - 80px );
     /*TEST*/
     background-color: chocolate;
 }
 
 nav {
     float: left;
+    height: 100%;
+    width: 209px;
+    overflow: hidden;
+    padding: 18px;
      /*TEST*/
-     background-color: mediumslateblue;
+     background-color: #000000;
+}
+
+nav .logo img{
+    height: 35px;
 }
 
 .main-content {
     float: left;
+    height: 100%;
+    width: calc( 100% - 209px );
+    overflow-y: auto;
     /*TEST*/
     background-color: pink;
 }
@@ -35,6 +47,7 @@ nav {
 /*FOOTER*/
 footer {
     height: 80px;
+    overflow: hidden;
     /*TEST*/
     background-color: cornflowerblue;
 }
