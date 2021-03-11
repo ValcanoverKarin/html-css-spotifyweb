@@ -39,6 +39,7 @@ nav {
     color: white;
     font-size: 11px;
     background-color: #000000;
+    font-weight: 500;
 }
 
 .nav-content{
@@ -70,6 +71,10 @@ nav .logo img{
     font-size: 11px;
 }
 
+.text_white { 
+    color: white;
+}
+
 .menu-link .home, .search, .library {
     border-left: 1px solid #000000;
     padding: 0px 0px 8px 17px;
@@ -77,15 +82,15 @@ nav .logo img{
 }
 
 .menu-link .home:hover {
-    border-left: 1px solid #adff2e;
+    border-left: 2px solid #adff2e;
 }
 
 .menu-link .search:hover {
-    border-left: 1px solid #adff2e;
+    border-left: 2px solid #adff2e;
 }
 
 .menu-link .library:hover {
-    border-left: 1px solid #adff2e;
+    border-left: 2px solid #adff2e;
 }
 
 .menu-logo {
@@ -180,6 +185,21 @@ nav a:hover {
 footer {
     height: 80px;
     overflow: hidden;
-    /*TEST*/
     background-color: #282828;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+.volume {
+    width: 15%;
+}
+/*test
+@media all and (max-width: 600px) {
+    nav {
+        background-color: aquamarine;
+    }
+}*/
+
