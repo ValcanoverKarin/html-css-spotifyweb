@@ -186,20 +186,150 @@ footer {
     height: 80px;
     overflow: hidden;
     background-color: #282828;
-    padding: 0px 10px 0px 10px;
+}
+
+footer .footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+footer i{
+    font-size: 14px;
+}
+
+footer .big_bar {
+    width: 100%;
+    margin: 0 20px;
+    height: 3px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+}
+
+footer .big_bar_inner{
+    width: 20%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+}
+
+footer .small_bar{
+    height: 3px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    
+}
+
+footer .small_bar_inner{
+    width: 20%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+}
+
+footer .song{
+    padding-left: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-
-.volume {
-    width: 15%;
+footer .song .song_info img{
+    height: 40px;
 }
-/*test
-@media all and (max-width: 600px) {
-    nav {
-        background-color: aquamarine;
-    }
-}*/
+
+footer .song .info_name{
+    padding-left: 10px;
+}
+
+.info_name .author{
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.info_name .author{
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+}
+.info_name .title{
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+footer .song .info_name a{
+    font-size: 10px;
+    color: #848484;
+}
+
+footer .song .icon{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+footer .song .icon .folder{
+    padding-left: 10px;
+}
+
+footer .song .icon i{
+    color: #848484;
+}
+
+.song-section{
+    width: 40%;
+    min-width: 20%;
+    text-align: center;
+}
+
+.song-section .song_buttons i{
+    vertical-align: middle;
+}
+
+.song-section .icon_play {
+    font-size: 25px;
+    padding: 0 25px;
+}
+
+.song-section .song_buttons .icon_backward{
+    padding-left: 15px;
+}
+.song-section .song_buttons .icon_forward {
+    padding-right: 15px;
+}
+
+.song-section .song_bar{
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+.big_bar{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.song-section .time{
+    font-size: 8px;
+}
+
+.volume{
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.volume_buttons{
+   display: flex;
+}
+
+.volume_buttons i{
+    padding-right: 15px;
+}
+
+.volume .small_bar{
+    width: 90px;
+}
 
