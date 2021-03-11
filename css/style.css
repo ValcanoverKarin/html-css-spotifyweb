@@ -200,7 +200,7 @@ footer i{
 }
 
 footer .big_bar {
-    width: 100%;
+    width: 80%;
     margin: 0 20px;
     height: 3px;
     background-color: #5a5a5a;
@@ -234,8 +234,8 @@ footer .song{
     align-items: center;
 }
 
-footer .song .song_info img{
-    height: 40px;
+.song_info img{
+    height: 37px;
 }
 
 footer .song .info_name{
@@ -249,14 +249,14 @@ footer .song .info_name{
 }
 
 .info_name .author{
-    font-size: 12px;
+    font-size: 11px;
     color: white;
     font-weight: 700;
 }
 .info_name .title{
-    font-size: 12px;
-    color: white;
-    font-weight: 700;
+    font-size: 9px;
+    color: #a3a3a3;
+    font-weight: 500;
 }
 
 footer .song .info_name a{
@@ -264,17 +264,23 @@ footer .song .info_name a{
     color: #848484;
 }
 
-footer .song .icon{
-    padding-left: 30px;
+.icon{
+    padding-left: 40px;
     display: flex;
     align-items: center;
-}
-footer .song .icon .folder{
-    padding-left: 10px;
+    color: #848484;
 }
 
-footer .song .icon i{
-    color: #848484;
+.folder:hover {
+    color: white;
+}
+
+.heart:hover {
+    color: white;
+}
+
+footer .song .icon .folder{
+    padding-left: 10px;
 }
 
 .song-section{
@@ -283,26 +289,29 @@ footer .song .icon i{
     text-align: center;
 }
 
-.song-section .song_buttons i{
+.song_buttons i{
     vertical-align: middle;
+    color: white;
 }
 
 .song-section .icon_play {
-    font-size: 25px;
+    font-size: 27px;
     padding: 0 25px;
+    color: white;
 }
 
 .song-section .song_buttons .icon_backward{
     padding-left: 15px;
 }
+
 .song-section .song_buttons .icon_forward {
     padding-right: 15px;
 }
 
-.song-section .song_bar{
+.song_bar{
     display: flex;
-    align-items: baseline;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 7px
 }
 
 .big_bar{
@@ -312,6 +321,7 @@ footer .song .icon i{
 
 .song-section .time{
     font-size: 8px;
+    color: white ;
 }
 
 .volume{
@@ -325,8 +335,9 @@ footer .song .icon i{
    display: flex;
 }
 
-.volume_buttons i{
+.icon_volume {
     padding-right: 15px;
+    font-size: 12px;
 }
 
 .volume .small_bar{
