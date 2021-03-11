@@ -70,15 +70,22 @@ nav .logo img{
     font-size: 11px;
 }
 
-.menu-link li {
-    padding: 0px 0px 8px 0px;
+.menu-link .home, .search, .library {
+    border-left: 1px solid #000000;
+    padding: 0px 0px 8px 17px;
+    
 }
 
-.menu-link .home {
-    color: white;
-    border-left: 1px solid greenyellow;
-    padding-left: 17px;
-    
+.menu-link .home:hover {
+    border-left: 1px solid #adff2e;
+}
+
+.menu-link .search:hover {
+    border-left: 1px solid #adff2e;
+}
+
+.menu-link .library:hover {
+    border-left: 1px solid #adff2e;
 }
 
 .menu-logo {
@@ -90,8 +97,8 @@ nav .logo img{
     /*height: calc( 100% - 218px );*/
     min-height: 150px;
     overflow:hidden;
-    padding: 0px 0px 8px 0px;
-    flex-grow
+    padding: 0px 17px 8px 17px;
+    flex-grow: 1;
 }
 
 .button_playlist {
@@ -124,14 +131,19 @@ nav .logo img{
     background-color: white;
 }
 
+.nav-install {
+    padding: 0px 17px 8px 17px;
+}
+
 .install {
     /*height: 25px;*/
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #a3a3a3;
     padding: 5px 0px 8px 0px;
 }
 
 .profile {
     /*height: 30px;*/
+    padding: 12px 0px 0px 0px ;
 }
 
 .profile img {
@@ -145,7 +157,6 @@ nav .logo img{
 
 .profile .name {
     font-size: 12px;
-    padding-top: 20px;
 }
 
 nav a {
