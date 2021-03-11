@@ -35,13 +35,19 @@ nav {
     height: 100%;
     width: 209px; 
     overflow: hidden;
-    padding: 18px 17px 0px 17px;
+    /*padding: 18px 17px 0px 17px;*/
     color: white;
     font-size: 11px;
     background-color: #000000;
 }
 
 .nav-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -54,7 +60,7 @@ nav .logo img{
 
 .logo {
     /*height: 60px;*/
-    padding-bottom: 23px;
+    padding: 18px 17px 23px 17px;
 }
 
 /*menu-link*/
@@ -71,6 +77,8 @@ nav .logo img{
 .menu-link .home {
     color: white;
     border-left: 1px solid greenyellow;
+    padding-left: 17px;
+    
 }
 
 .menu-logo {
@@ -79,10 +87,11 @@ nav .logo img{
 }
 
 .nav_playlist {
-    height: calc( 100% - 218px );
+    /*height: calc( 100% - 218px );*/
     min-height: 150px;
     overflow:hidden;
     padding: 0px 0px 8px 0px;
+    flex-grow
 }
 
 .button_playlist {
