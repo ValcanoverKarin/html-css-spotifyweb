@@ -436,17 +436,17 @@ footer .small_bar:hover .small_bar_inner{
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 530px){
     .logo img:first-child {
     display: none;}
 }
 
-@media screen and (min-width: 481px){
+@media screen and (min-width: 531px){
     .logo img:last-child {
     display: none;}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
     .nav_content {
       width: 65px;
     }
@@ -498,8 +498,42 @@ footer .small_bar:hover .small_bar_inner{
     }
 }
 
-@media screen and (max-width: 610px) {
-    .footer_content .song
+
+@media screen and (max-width: 720px) {
+    footer .song .icon{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    footer .song .icon .folder{
+        padding-left: 0;
+    }
+
+    .song.icon{
+        padding-left: 10px;
+    }
+
+    .volume_buttons i{
+        padding-right: 5px;
+    }
+
+    .song-section .song_buttons .icon_backward{
+        padding-left: 5px;
+    }
+    
+    .song-section .song_buttons .icon_forward {
+        padding-right: 5px;
+    }
+
+    .song-section .icon_play {
+        font-size: 27px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    footer .big_bar {
+        margin: 0 10px;
+        width: 70%;
+    }
+    
+    
 }
-
-
