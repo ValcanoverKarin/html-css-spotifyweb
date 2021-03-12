@@ -11,8 +11,6 @@
     height: 100vh;
     font-family: 'Montserrat';
 
-    /*TEST*/
-    background-color: aquamarine;
 }
 
 a{
@@ -26,8 +24,6 @@ a{
 /*MAIN*/
 main {
     height: calc( 100% - 80px );
-    /*TEST*/
-    background-color: chocolate;
 }
 
 nav {
@@ -429,7 +425,65 @@ footer .small_bar:hover .small_bar_inner{
 }
 
 
+@media screen and (max-width: 480px){
+    .logo img:first-child {
+    display: none;}
+}
 
+@media screen and (min-width: 480px){
+    .logo img:last-child {
+    display: none;}
+}
 
+@media screen and (max-width: 480px) {
+    .nav_content {
+      width: 65px;
+    }
 
+    .main_content {
+        width: calc( 100% - 65px );
+    }
+
+    .upgrade {
+        width: calc( 100% - 65px );
+    }
+
+    .nav_content span {
+        display: none;
+    }
+
+    .nav-install a {
+        display: none;
+    }
+
+    .install {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .profile {
+        text-align: center;
+    }
+    
+    .profile img{
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav_playlist h4{
+        display: none;
+    }
+    
+    .nav_playlist .menu-palylist{
+        display: none;
+    }
+    
+    .nav_playlist .button_playlist{
+        display: none;
+    }
+
+    .arrow {
+        margin: auto;
+    }
+}
 
