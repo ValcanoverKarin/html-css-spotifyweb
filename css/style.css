@@ -6,7 +6,7 @@
 }
 
 /*COMMON*/
-#app-wrapper {
+#app_wrapper {
     width: 100%;
     height: 100vh;
     font-family: 'Montserrat';
@@ -42,13 +42,13 @@ nav {
     font-weight: 500;
 }
 
-.nav-content{
+.nav_content{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.nav-container {
+.nav_container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -76,9 +76,13 @@ nav .logo img{
 }
 
 .menu-link .home, .search, .library {
-    border-left: 1px solid #000000;
     padding: 0px 0px 8px 17px;
-    
+}
+
+.arrow {
+    width: 13px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .menu-link .home:hover {
@@ -173,7 +177,7 @@ nav a:hover {
 }
 
 /*main content*/
-.main-content {
+.main_content {
     float: left;
     height: 100%;
     width: calc( 100% - 209px );
@@ -195,48 +199,7 @@ footer .footer_content{
     height: 100%;
 }
 
-footer i{
-    font-size: 14px;
-}
-
-footer .big_bar {
-    width: 80%;
-    margin: 0 20px;
-    height: 3px;
-    background-color: #5a5a5a;
-    border-radius: 5px;
-}
-
-footer .big_bar_inner{
-    width: 20%;
-    height: 100%;
-    background-color: #c1c1c1;
-    border-radius: 5px;
-}
-
-footer .big_bar:hover .big_bar_inner{
-    background-color: #adff2f;
-}
-
-footer .small_bar{
-    height: 3px;
-    background-color: #5a5a5a;
-    border-radius: 5px;
-    
-}
-
-footer .small_bar_inner{
-    width: 25%;
-    height: 100%;
-    background-color: #c1c1c1;
-    border-radius: 5px;
-}
-
-footer .small_bar:hover .small_bar_inner{
-    background-color: #adff2f;
-}
-
-
+/*sezione sinistra*/
 footer .song{
     padding-left: 10px;
     display: flex;
@@ -262,6 +225,7 @@ footer .song .info_name{
     color: white;
     font-weight: 700;
 }
+
 .info_name .title{
     font-size: 9px;
     color: #a3a3a3;
@@ -292,6 +256,7 @@ footer .song .icon .folder{
     padding-left: 10px;
 }
 
+/*sezione centrale*/
 .song-section{
     width: 40%;
     min-width: 20%;
@@ -324,18 +289,73 @@ footer .song .icon .folder{
 .song_bar{
     display: flex;
     align-items: center;
-    margin-top: 7px
-}
-
-.big_bar{
-    width: 100%;
-    margin: 0 20px;
+    margin-top: 9px
 }
 
 .song-section .time{
     font-size: 8px;
     color: white ;
 }
+
+footer .big_bar {
+    width: 80%;
+    margin: 0 20px;
+    height: 3px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+}
+
+footer .big_bar_inner{
+    width: 20%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    position: relative;
+}
+
+footer .big_bar:hover .big_bar_inner{
+    background-color: #adff2f;
+}
+
+.big_bar_inner .circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    position: absolute;
+    right: -5px;
+    top: -70%;
+}
+
+/*sezione destra*/
+footer .small_bar{
+    height: 3px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+}
+
+footer .small_bar_inner{
+    width: 25%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    position: relative;
+}
+
+footer .small_bar:hover .small_bar_inner{
+    background-color: #adff2f;
+}
+
+.small_bar_inner .circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    position: absolute;
+    right: -5px;
+    top: -70%;
+}
+
 
 .volume{
     padding-right: 10px;
@@ -356,4 +376,69 @@ footer .song .icon .folder{
 .volume .small_bar{
     width: 90px;
 }
+
+
+/*upgrade*/
+.upgrade {
+    text-align: right;
+    text-transform: uppercase;
+    width: calc( 100% - 209px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #080b12da;
+    
+}
+
+.upgrade .text_upgrade{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px 33px; 
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 22px;
+}
+
+.upgrade .text_upgrade:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+.main_content {
+    padding-top: 93px;
+    float: left;
+    height: 100%;
+    width: calc(100% - 209px);
+    overflow-y: auto;
+}
+
+.main_container ul {
+    text-align: center;
+}
+
+.main_container ul li {
+    display: inline-block;
+}
+
+.main_container a {
+    text-decoration: none;
+    font-weight: 600;
+    color:#76787d;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0 10px 2px 10px;
+}
+
+.main_container a:hover {
+    color: white;
+    border-bottom: 2px solid #adff2e;
+    
+}
+
 

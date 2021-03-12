@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div id="app-wrapper">
+    <div id="app_wrapper">
 
         <!--MAIN-->
         <main>
             <!--nav-->
             <nav class="nav_content">
-                <div class="nav-container">
+                <div class="nav_container">
                     <!--logo-->
                     <div class="logo">
                         <img src="img/logo.svg" alt="logo">
@@ -30,7 +31,7 @@
                     <!--nav links-->
                     <div class="nav_links">
                         <!--menu link-->
-                        <ul class="menu-link">
+                        <ul class="menu_element menu-link">
                             <!--home-->
                             <li class="home">
                                 <a href="#">
@@ -41,7 +42,7 @@
                             <!--fine home-->
 
                             <!--search-->
-                            <li class="search">
+                            <li class="menu_element search">
                                 <a href="#">
                                     <img class="menu-logo" src="img/search.svg" alt="search-logo">
                                     <span>Cerca</span>
@@ -50,7 +51,7 @@
                             <!--fine search-->
 
                             <!--libreria-->
-                            <li class="library">
+                            <li class="menu_element library">
                                 <a href="#">
                                     <img class="menu-logo" src="img/libreria.svg" alt="library-logo">
                                     <span>La tua libreria</span>
@@ -86,10 +87,13 @@
                     <!--install-->
                     <div class="nav-install">
                         <div class="install">
-                            <div><a href="#">Installa app</a></div>
+                            <div>
+                                <img class="arrow" src="img/download.svg" alt="Download Icon">
+                                <a href="#">Installa app</a>
+                            </div>
                         </div>
                         <div class="profile">
-                            <img src="img/profile.svg" alt="Profile Icon">
+                            <img src="img/profile.svg" alt="">
                             <span class="name">John Doe</span>
                         </div>
                     </div>
@@ -99,15 +103,36 @@
             <!--fine nav-->
 
             <!--main content-->
-            <div class="main-content">
-                content
+            <div class="main_content">
+                <div class="main_container">
+                    <ul class="">
+                        <li>
+                            <a href="#">In evidenza</a>
+                        </li>
+                        <li>
+                            <a href="#">Podcast</a>
+                        </li>
+                        <li>
+                            <a href="#">Classifiche</a>
+                        </li>
+                        <li>
+                            <a href="#">Generi e Mood</a>
+                        </li>
+                        <li>
+                            <a href="#">Nuove uscite</a>
+                        </li>
+                        <li>
+                            <a href="#">Scopri</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!--fine main content-->
         </main>
         <!--FINE MAIN-->
 
         <!--FOOTER-->
-        <footer>
+        <footer> 
             <div class="footer_content">
                 <!--sezione sinistra-->
                 <div class="song">
@@ -149,7 +174,9 @@
                     <div class="song_bar">
                         <span class="time">0:25</span>
                         <div class="big_bar">
-                            <div class="big_bar_inner"></div>
+                            <div class="big_bar_inner">
+                                <i class="circle"></i>
+                            </div>
                         </div>
                         <span class="time">4:35</span>
                     </div>
@@ -170,7 +197,8 @@
                     <!--sezione barra volume-->
                     <div class="small_bar">
                         <div class="small_bar_inner">
-                            <div class="line"></div>
+                            <i class="circle"></i>
+                            <!--<div class="line"></div>-->
                         </div>
                     </div>
                     <!--fine sezione barra volume-->
@@ -179,6 +207,9 @@
             </div>
         </footer>
         <!--FINE FOOTER-->
+        <div class="upgrade">
+            <div class="text_upgrade">Effettua l'upgrade</div>
+        </div>
 
     </div>
     
