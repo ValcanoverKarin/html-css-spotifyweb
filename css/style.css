@@ -437,6 +437,36 @@ footer .small_bar:hover .small_bar_inner{
 }
 
 
+/*test*/
+.song_container {
+    padding: 35px 20px;
+}
+
+.titolo {
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main-content .container .image_album {
+    position: relative;
+    cursor: pointer;
+}
+
+.container img {
+    width: 100%;
+}
+
+.main_content .song_container .container {
+    width: calc( 100% / 6 );
+    max-width: 250px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+
 @media screen and (max-width: 530px){
     .logo img:first-child {
     display: none;}
