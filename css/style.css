@@ -482,6 +482,9 @@ footer .small_bar:hover .small_bar_inner{
     font-weight: 600;
 }
 
+.img_circle img{
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 530px){
     .logo img:first-child {
