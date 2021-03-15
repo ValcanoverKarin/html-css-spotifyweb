@@ -448,6 +448,7 @@ footer .small_bar:hover .small_bar_inner{
 
 .wrapper {
     display: flex;
+    padding-bottom: 35px;
 }
 
 .main-content .container .image_album {
@@ -475,11 +476,12 @@ footer .small_bar:hover .small_bar_inner{
     padding: 10px 0px 5px 0px;
 }
 
-.text_album .sottotitolo {
+.sottotitolo {
     color: #a3a3a3;
     font-size: 11px;
     font-weight: 600;
 }
+
 
 @media screen and (max-width: 530px){
     .logo img:first-child {
