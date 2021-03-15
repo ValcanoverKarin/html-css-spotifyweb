@@ -218,6 +218,83 @@ nav a:hover {
     padding-top: 3px;
 }
 
+/*song container*/
+.song_container {
+    padding: 35px 20px;
+}
+
+.titolo {
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.image_album {
+    position: relative;
+}
+
+.image_album  .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    display: none;
+}
+
+.play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+}
+
+.image_album:hover .play {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.img_circle:hover .play {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 50%;
+}
+
+.main_content .song_container .container {
+    width: calc( 100% / 6 );
+    max-width: 250px;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+
+.text_album {
+    text-align: center;
+}
+
+.text_album h5 {
+    color: white;
+    padding: 10px 0px 5px 0px;
+}
+
+.sottotitolo {
+    color: #a3a3a3;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.img_circle img{
+    border-radius: 50%;
+}
+
 /*FOOTER*/
 footer {
     height: 80px;
@@ -436,54 +513,56 @@ footer .small_bar:hover .small_bar_inner{
     transform: scale(1.1,1.1);
 }
 
+@media screen and (max-width: 730px) {
+    footer .song .icon{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    footer .song .icon .folder{
+        padding-left: 0;
+    }
 
-/*test*/
-.song_container {
-    padding: 35px 20px;
+    .song.icon{
+        padding-left: 10px;
+    }
+
+    .volume_buttons i{
+        padding-right: 5px;
+    }
+
+    .song-section .song_buttons .icon_backward{
+        padding-left: 5px;
+    }
+    
+    .song-section .song_buttons .icon_forward {
+        padding-right: 5px;
+    }
+
+    .song-section .icon_play {
+        font-size: 27px;
+        padding: 0 10px;
+        color: white;
+    }
+
+    footer .big_bar {
+        margin: 0 10px;
+        width: 80%;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .main_content .song_container .container {
+        width: calc( 100% / 4 );
+    }   
 }
 
-.titolo {
-    color: white;
-}
 
-.wrapper {
-    display: flex;
-    padding-bottom: 35px;
-}
-
-.main-content .container .image_album {
-    position: relative;
-    cursor: pointer;
-}
-
-.container img {
-    width: 100%;
-}
-
-.main_content .song_container .container {
-    width: calc( 100% / 6 );
-    max-width: 250px;
-    padding-top: 25px;
-    padding-right: 10px;
-}
-
-.text_album {
-    text-align: center;
-}
-
-.text_album h5 {
-    color: white;
-    padding: 10px 0px 5px 0px;
-}
-
-.sottotitolo {
-    color: #a3a3a3;
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.img_circle img{
-    border-radius: 50%;
+@media screen and (max-width: 600px) {
+    .main_content .song_container .container {
+        width: calc( 100% / 2 );
+    }
 }
 
 @media screen and (max-width: 530px){
@@ -494,6 +573,7 @@ footer .small_bar:hover .small_bar_inner{
 @media screen and (min-width: 531px){
     .logo img:last-child {
     display: none;}
+
 }
 
 @media screen and (max-width: 530px) {
@@ -546,44 +626,8 @@ footer .small_bar:hover .small_bar_inner{
     .arrow {
         margin: auto;
     }
-}
 
-
-@media screen and (max-width: 700px) {
-    footer .song .icon{
-        flex-direction: column;
-        padding-left: 20px;
+    .main_content .song_container .container {
+        width: calc( 100% / 2 );
     }
-    footer .song .icon .folder{
-        padding-left: 0;
-    }
-
-    .song.icon{
-        padding-left: 10px;
-    }
-
-    .volume_buttons i{
-        padding-right: 5px;
-    }
-
-    .song-section .song_buttons .icon_backward{
-        padding-left: 5px;
-    }
-    
-    .song-section .song_buttons .icon_forward {
-        padding-right: 5px;
-    }
-
-    .song-section .icon_play {
-        font-size: 27px;
-        padding: 0 10px;
-        color: white;
-    }
-
-    footer .big_bar {
-        margin: 0 10px;
-        width: 80%;
-    }
-    
-    
 }
